@@ -28,7 +28,7 @@ def write(path: str, appendices: dict):
 
 if __name__ == '__main__':
     appendices_path = os.path.join("src", "utils", "doc", "appendices")
-    spec_path = "C:\\Users\\julia\\Downloads\\Data Output from F1 22 v16.docx"
+    spec_path = ""
     path_to = os.path.join(".", "data", "appendices.py")
     dicts = get(appendices_path, spec_path)
     write(path_to, dicts)

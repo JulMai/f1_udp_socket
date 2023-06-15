@@ -46,6 +46,9 @@ def get_table_content(table, value_key: str):
 
 
 TABLE_IDX_23 = {
+    "PacktTypes": 0,
+    "PacketIDs": 1,
+    "EventStringCodes": 2,
     "TeamIDs": 3,
     "DriverIDs": 4,
     "TrackIDs": 5,
