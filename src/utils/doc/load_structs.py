@@ -1,14 +1,8 @@
-import zipfile
 import re
 import json
 import os
 
-
-def get_str_from_doc(path: str):
-    docx = zipfile.ZipFile(path)
-    content = docx.read('word/document.xml').decode('utf-8')
-    cleaned = re.sub('<(.|n)*?>', '', content)
-    return cleaned
+from utils.doc.load import get_str_from_doc
 
 
 def get_structs(text: str):
