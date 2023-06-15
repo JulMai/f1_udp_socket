@@ -1,0 +1,7 @@
+{
+    "lapTimeInMS": "uint32",
+    "sector1TimeInMS": "uint16",
+    "sector2TimeInMS": "uint16",
+    "sector3TimeInMS": "uint16",
+    "lapValidBitFlags": "uint8"
+}

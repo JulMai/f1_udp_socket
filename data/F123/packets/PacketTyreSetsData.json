@@ -1,0 +1,220 @@
+{
+    "header": {
+        "packetFormat": "uint16",
+        "gameYear": "uint8",
+        "gameMajorVersion": "uint8",
+        "gameMinorVersion": "uint8",
+        "packetVersion": "uint8",
+        "packetId": "uint8",
+        "sessionUID": "uint64",
+        "sessionTime": "float",
+        "frameIdentifier": "uint32",
+        "overallFrameIdentifier": "uint32",
+        "playerCarIndex": "uint8",
+        "secondaryPlayerCarIndex": "uint8"
+    },
+    "carIdx": "uint8",
+    "tyreSetData": [
+        {
+            "actualTyreCompound": "uint8",
+            "visualTyreCompound": "uint8",
+            "available": "uint8",
+            "recommendedSession": "uint8",
+            "lifeSpan": "uint8",
+            "usableLife": "uint8",
+            "lapDeltaTime": "int16",
+            "fitted": "uint8"
+        },
+        {
+            "actualTyreCompound": "uint8",
+            "visualTyreCompound": "uint8",
+            "available": "uint8",
+            "recommendedSession": "uint8",
+            "lifeSpan": "uint8",
+            "usableLife": "uint8",
+            "lapDeltaTime": "int16",
+            "fitted": "uint8"
+        },
+        {
+            "actualTyreCompound": "uint8",
+            "visualTyreCompound": "uint8",
+            "available": "uint8",
+            "recommendedSession": "uint8",
+            "lifeSpan": "uint8",
+            "usableLife": "uint8",
+            "lapDeltaTime": "int16",
+            "fitted": "uint8"
+        },
+        {
+            "actualTyreCompound": "uint8",
+            "visualTyreCompound": "uint8",
+            "available": "uint8",
+            "recommendedSession": "uint8",
+            "lifeSpan": "uint8",
+            "usableLife": "uint8",
+            "lapDeltaTime": "int16",
+            "fitted": "uint8"
+        },
+        {
+            "actualTyreCompound": "uint8",
+            "visualTyreCompound": "uint8",
+            "available": "uint8",
+            "recommendedSession": "uint8",
+            "lifeSpan": "uint8",
+            "usableLife": "uint8",
+            "lapDeltaTime": "int16",
+            "fitted": "uint8"
+        },
+        {
+            "actualTyreCompound": "uint8",
+            "visualTyreCompound": "uint8",
+            "available": "uint8",
+            "recommendedSession": "uint8",
+            "lifeSpan": "uint8",
+            "usableLife": "uint8",
+            "lapDeltaTime": "int16",
+            "fitted": "uint8"
+        },
+        {
+            "actualTyreCompound": "uint8",
+            "visualTyreCompound": "uint8",
+            "available": "uint8",
+            "recommendedSession": "uint8",
+            "lifeSpan": "uint8",
+            "usableLife": "uint8",
+            "lapDeltaTime": "int16",
+            "fitted": "uint8"
+        },
+        {
+            "actualTyreCompound": "uint8",
+            "visualTyreCompound": "uint8",
+            "available": "uint8",
+            "recommendedSession": "uint8",
+            "lifeSpan": "uint8",
+            "usableLife": "uint8",
+            "lapDeltaTime": "int16",
+            "fitted": "uint8"
+        },
+        {
+            "actualTyreCompound": "uint8",
+            "visualTyreCompound": "uint8",
+            "available": "uint8",
+            "recommendedSession": "uint8",
+            "lifeSpan": "uint8",
+            "usableLife": "uint8",
+            "lapDeltaTime": "int16",
+            "fitted": "uint8"
+        },
+        {
+            "actualTyreCompound": "uint8",
+            "visualTyreCompound": "uint8",
+            "available": "uint8",
+            "recommendedSession": "uint8",
+            "lifeSpan": "uint8",
+            "usableLife": "uint8",
+            "lapDeltaTime": "int16",
+            "fitted": "uint8"
+        },
+        {
+            "actualTyreCompound": "uint8",
+            "visualTyreCompound": "uint8",
+            "available": "uint8",
+            "recommendedSession": "uint8",
+            "lifeSpan": "uint8",
+            "usableLife": "uint8",
+            "lapDeltaTime": "int16",
+            "fitted": "uint8"
+        },
+        {
+            "actualTyreCompound": "uint8",
+            "visualTyreCompound": "uint8",
+            "available": "uint8",
+            "recommendedSession": "uint8",
+            "lifeSpan": "uint8",
+            "usableLife": "uint8",
+            "lapDeltaTime": "int16",
+            "fitted": "uint8"
+        },
+        {
+            "actualTyreCompound": "uint8",
+            "visualTyreCompound": "uint8",
+            "available": "uint8",
+            "recommendedSession": "uint8",
+            "lifeSpan": "uint8",
+            "usableLife": "uint8",
+            "lapDeltaTime": "int16",
+            "fitted": "uint8"
+        },
+        {
+            "actualTyreCompound": "uint8",
+            "visualTyreCompound": "uint8",
+            "available": "uint8",
+            "recommendedSession": "uint8",
+            "lifeSpan": "uint8",
+            "usableLife": "uint8",
+            "lapDeltaTime": "int16",
+            "fitted": "uint8"
+        },
+        {
+            "actualTyreCompound": "uint8",
+            "visualTyreCompound": "uint8",
+            "available": "uint8",
+            "recommendedSession": "uint8",
+            "lifeSpan": "uint8",
+            "usableLife": "uint8",
+            "lapDeltaTime": "int16",
+            "fitted": "uint8"
+        },
+        {
+            "actualTyreCompound": "uint8",
+            "visualTyreCompound": "uint8",
+            "available": "uint8",
+            "recommendedSession": "uint8",
+            "lifeSpan": "uint8",
+            "usableLife": "uint8",
+            "lapDeltaTime": "int16",
+            "fitted": "uint8"
+        },
+        {
+            "actualTyreCompound": "uint8",
+            "visualTyreCompound": "uint8",
+            "available": "uint8",
+            "recommendedSession": "uint8",
+            "lifeSpan": "uint8",
+            "usableLife": "uint8",
+            "lapDeltaTime": "int16",
+            "fitted": "uint8"
+        },
+        {
+            "actualTyreCompound": "uint8",
+            "visualTyreCompound": "uint8",
+            "available": "uint8",
+            "recommendedSession": "uint8",
+            "lifeSpan": "uint8",
+            "usableLife": "uint8",
+            "lapDeltaTime": "int16",
+            "fitted": "uint8"
+        },
+        {
+            "actualTyreCompound": "uint8",
+            "visualTyreCompound": "uint8",
+            "available": "uint8",
+            "recommendedSession": "uint8",
+            "lifeSpan": "uint8",
+            "usableLife": "uint8",
+            "lapDeltaTime": "int16",
+            "fitted": "uint8"
+        },
+        {
+            "actualTyreCompound": "uint8",
+            "visualTyreCompound": "uint8",
+            "available": "uint8",
+            "recommendedSession": "uint8",
+            "lifeSpan": "uint8",
+            "usableLife": "uint8",
+            "lapDeltaTime": "int16",
+            "fitted": "uint8"
+        }
+    ],
+    "fittedIdx": "uint8"
+}

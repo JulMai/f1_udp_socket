@@ -1,0 +1,35 @@
+{
+    "speed": "uint16",
+    "throttle": "float",
+    "steer": "float",
+    "brake": "float",
+    "clutch": "uint8",
+    "engineRPM": "uint16",
+    "revLightsPercent": "uint8",
+    "revLightsBitValue": "uint16",
+    "brakesTemperature": [
+        "uint16",
+        "uint16",
+        "uint16",
+        "uint16"
+    ],
+    "tyresInnerTemperature": [
+        "uint8",
+        "uint8",
+        "uint8",
+        "uint8"
+    ],
+    "engineTemperature": "uint16",
+    "tyresPressure": [
+        "float",
+        "float",
+        "float",
+        "float"
+    ],
+    "surfaceType": [
+        "uint8",
+        "uint8",
+        "uint8",
+        "uint8"
+    ]
+}

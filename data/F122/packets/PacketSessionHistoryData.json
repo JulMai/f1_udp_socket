@@ -1,0 +1,765 @@
+{
+    "header": {
+        "packetFormat": "uint16",
+        "gameMajorVersion": "uint8",
+        "gameMinorVersion": "uint8",
+        "packetVersion": "uint8",
+        "packetId": "uint8",
+        "sessionUID": "uint64",
+        "sessionTime": "float",
+        "frameIdentifier": "uint32",
+        "playerCarIndex": "uint8",
+        "secondaryPlayerCarIndex": "uint8"
+    },
+    "carIdx": "uint8",
+    "numLaps": "uint8",
+    "numTyreStints": "uint8",
+    "bestLapTimeLapNum": "uint8",
+    "bestSector1LapNum": "uint8",
+    "bestSector2LapNum": "uint8",
+    "bestSector3LapNum": "uint8",
+    "lapHistoryData": [
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        },
+        {
+            "lapTimeInMS": "uint32",
+            "sector1TimeInMS": "uint16",
+            "sector2TimeInMS": "uint16",
+            "sector3TimeInMS": "uint16",
+            "lapValidBitFlags": "uint8"
+        }
+    ],
+    "tyreStintsHistoryData": [
+        {
+            "endLap": "uint8",
+            "tyreActualCompound": "uint8",
+            "tyreVisualCompound": "uint8"
+        },
+        {
+            "endLap": "uint8",
+            "tyreActualCompound": "uint8",
+            "tyreVisualCompound": "uint8"
+        },
+        {
+            "endLap": "uint8",
+            "tyreActualCompound": "uint8",
+            "tyreVisualCompound": "uint8"
+        },
+        {
+            "endLap": "uint8",
+            "tyreActualCompound": "uint8",
+            "tyreVisualCompound": "uint8"
+        },
+        {
+            "endLap": "uint8",
+            "tyreActualCompound": "uint8",
+            "tyreVisualCompound": "uint8"
+        },
+        {
+            "endLap": "uint8",
+            "tyreActualCompound": "uint8",
+            "tyreVisualCompound": "uint8"
+        },
+        {
+            "endLap": "uint8",
+            "tyreActualCompound": "uint8",
+            "tyreVisualCompound": "uint8"
+        },
+        {
+            "endLap": "uint8",
+            "tyreActualCompound": "uint8",
+            "tyreVisualCompound": "uint8"
+        }
+    ]
+}

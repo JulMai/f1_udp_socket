@@ -1,0 +1,790 @@
+{
+    "header": {
+        "packetFormat": "uint16",
+        "gameYear": "uint8",
+        "gameMajorVersion": "uint8",
+        "gameMinorVersion": "uint8",
+        "packetVersion": "uint8",
+        "packetId": "uint8",
+        "sessionUID": "uint64",
+        "sessionTime": "float",
+        "frameIdentifier": "uint32",
+        "overallFrameIdentifier": "uint32",
+        "playerCarIndex": "uint8",
+        "secondaryPlayerCarIndex": "uint8"
+    },
+    "carTelemetryData": [
+        {
+            "speed": "uint16",
+            "throttle": "float",
+            "steer": "float",
+            "brake": "float",
+            "clutch": "uint8",
+            "engineRPM": "uint16",
+            "revLightsPercent": "uint8",
+            "revLightsBitValue": "uint16",
+            "brakesTemperature": [
+                "uint16",
+                "uint16",
+                "uint16",
+                "uint16"
+            ],
+            "tyresInnerTemperature": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ],
+            "engineTemperature": "uint16",
+            "tyresPressure": [
+                "float",
+                "float",
+                "float",
+                "float"
+            ],
+            "surfaceType": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ]
+        },
+        {
+            "speed": "uint16",
+            "throttle": "float",
+            "steer": "float",
+            "brake": "float",
+            "clutch": "uint8",
+            "engineRPM": "uint16",
+            "revLightsPercent": "uint8",
+            "revLightsBitValue": "uint16",
+            "brakesTemperature": [
+                "uint16",
+                "uint16",
+                "uint16",
+                "uint16"
+            ],
+            "tyresInnerTemperature": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ],
+            "engineTemperature": "uint16",
+            "tyresPressure": [
+                "float",
+                "float",
+                "float",
+                "float"
+            ],
+            "surfaceType": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ]
+        },
+        {
+            "speed": "uint16",
+            "throttle": "float",
+            "steer": "float",
+            "brake": "float",
+            "clutch": "uint8",
+            "engineRPM": "uint16",
+            "revLightsPercent": "uint8",
+            "revLightsBitValue": "uint16",
+            "brakesTemperature": [
+                "uint16",
+                "uint16",
+                "uint16",
+                "uint16"
+            ],
+            "tyresInnerTemperature": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ],
+            "engineTemperature": "uint16",
+            "tyresPressure": [
+                "float",
+                "float",
+                "float",
+                "float"
+            ],
+            "surfaceType": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ]
+        },
+        {
+            "speed": "uint16",
+            "throttle": "float",
+            "steer": "float",
+            "brake": "float",
+            "clutch": "uint8",
+            "engineRPM": "uint16",
+            "revLightsPercent": "uint8",
+            "revLightsBitValue": "uint16",
+            "brakesTemperature": [
+                "uint16",
+                "uint16",
+                "uint16",
+                "uint16"
+            ],
+            "tyresInnerTemperature": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ],
+            "engineTemperature": "uint16",
+            "tyresPressure": [
+                "float",
+                "float",
+                "float",
+                "float"
+            ],
+            "surfaceType": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ]
+        },
+        {
+            "speed": "uint16",
+            "throttle": "float",
+            "steer": "float",
+            "brake": "float",
+            "clutch": "uint8",
+            "engineRPM": "uint16",
+            "revLightsPercent": "uint8",
+            "revLightsBitValue": "uint16",
+            "brakesTemperature": [
+                "uint16",
+                "uint16",
+                "uint16",
+                "uint16"
+            ],
+            "tyresInnerTemperature": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ],
+            "engineTemperature": "uint16",
+            "tyresPressure": [
+                "float",
+                "float",
+                "float",
+                "float"
+            ],
+            "surfaceType": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ]
+        },
+        {
+            "speed": "uint16",
+            "throttle": "float",
+            "steer": "float",
+            "brake": "float",
+            "clutch": "uint8",
+            "engineRPM": "uint16",
+            "revLightsPercent": "uint8",
+            "revLightsBitValue": "uint16",
+            "brakesTemperature": [
+                "uint16",
+                "uint16",
+                "uint16",
+                "uint16"
+            ],
+            "tyresInnerTemperature": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ],
+            "engineTemperature": "uint16",
+            "tyresPressure": [
+                "float",
+                "float",
+                "float",
+                "float"
+            ],
+            "surfaceType": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ]
+        },
+        {
+            "speed": "uint16",
+            "throttle": "float",
+            "steer": "float",
+            "brake": "float",
+            "clutch": "uint8",
+            "engineRPM": "uint16",
+            "revLightsPercent": "uint8",
+            "revLightsBitValue": "uint16",
+            "brakesTemperature": [
+                "uint16",
+                "uint16",
+                "uint16",
+                "uint16"
+            ],
+            "tyresInnerTemperature": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ],
+            "engineTemperature": "uint16",
+            "tyresPressure": [
+                "float",
+                "float",
+                "float",
+                "float"
+            ],
+            "surfaceType": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ]
+        },
+        {
+            "speed": "uint16",
+            "throttle": "float",
+            "steer": "float",
+            "brake": "float",
+            "clutch": "uint8",
+            "engineRPM": "uint16",
+            "revLightsPercent": "uint8",
+            "revLightsBitValue": "uint16",
+            "brakesTemperature": [
+                "uint16",
+                "uint16",
+                "uint16",
+                "uint16"
+            ],
+            "tyresInnerTemperature": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ],
+            "engineTemperature": "uint16",
+            "tyresPressure": [
+                "float",
+                "float",
+                "float",
+                "float"
+            ],
+            "surfaceType": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ]
+        },
+        {
+            "speed": "uint16",
+            "throttle": "float",
+            "steer": "float",
+            "brake": "float",
+            "clutch": "uint8",
+            "engineRPM": "uint16",
+            "revLightsPercent": "uint8",
+            "revLightsBitValue": "uint16",
+            "brakesTemperature": [
+                "uint16",
+                "uint16",
+                "uint16",
+                "uint16"
+            ],
+            "tyresInnerTemperature": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ],
+            "engineTemperature": "uint16",
+            "tyresPressure": [
+                "float",
+                "float",
+                "float",
+                "float"
+            ],
+            "surfaceType": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ]
+        },
+        {
+            "speed": "uint16",
+            "throttle": "float",
+            "steer": "float",
+            "brake": "float",
+            "clutch": "uint8",
+            "engineRPM": "uint16",
+            "revLightsPercent": "uint8",
+            "revLightsBitValue": "uint16",
+            "brakesTemperature": [
+                "uint16",
+                "uint16",
+                "uint16",
+                "uint16"
+            ],
+            "tyresInnerTemperature": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ],
+            "engineTemperature": "uint16",
+            "tyresPressure": [
+                "float",
+                "float",
+                "float",
+                "float"
+            ],
+            "surfaceType": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ]
+        },
+        {
+            "speed": "uint16",
+            "throttle": "float",
+            "steer": "float",
+            "brake": "float",
+            "clutch": "uint8",
+            "engineRPM": "uint16",
+            "revLightsPercent": "uint8",
+            "revLightsBitValue": "uint16",
+            "brakesTemperature": [
+                "uint16",
+                "uint16",
+                "uint16",
+                "uint16"
+            ],
+            "tyresInnerTemperature": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ],
+            "engineTemperature": "uint16",
+            "tyresPressure": [
+                "float",
+                "float",
+                "float",
+                "float"
+            ],
+            "surfaceType": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ]
+        },
+        {
+            "speed": "uint16",
+            "throttle": "float",
+            "steer": "float",
+            "brake": "float",
+            "clutch": "uint8",
+            "engineRPM": "uint16",
+            "revLightsPercent": "uint8",
+            "revLightsBitValue": "uint16",
+            "brakesTemperature": [
+                "uint16",
+                "uint16",
+                "uint16",
+                "uint16"
+            ],
+            "tyresInnerTemperature": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ],
+            "engineTemperature": "uint16",
+            "tyresPressure": [
+                "float",
+                "float",
+                "float",
+                "float"
+            ],
+            "surfaceType": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ]
+        },
+        {
+            "speed": "uint16",
+            "throttle": "float",
+            "steer": "float",
+            "brake": "float",
+            "clutch": "uint8",
+            "engineRPM": "uint16",
+            "revLightsPercent": "uint8",
+            "revLightsBitValue": "uint16",
+            "brakesTemperature": [
+                "uint16",
+                "uint16",
+                "uint16",
+                "uint16"
+            ],
+            "tyresInnerTemperature": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ],
+            "engineTemperature": "uint16",
+            "tyresPressure": [
+                "float",
+                "float",
+                "float",
+                "float"
+            ],
+            "surfaceType": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ]
+        },
+        {
+            "speed": "uint16",
+            "throttle": "float",
+            "steer": "float",
+            "brake": "float",
+            "clutch": "uint8",
+            "engineRPM": "uint16",
+            "revLightsPercent": "uint8",
+            "revLightsBitValue": "uint16",
+            "brakesTemperature": [
+                "uint16",
+                "uint16",
+                "uint16",
+                "uint16"
+            ],
+            "tyresInnerTemperature": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ],
+            "engineTemperature": "uint16",
+            "tyresPressure": [
+                "float",
+                "float",
+                "float",
+                "float"
+            ],
+            "surfaceType": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ]
+        },
+        {
+            "speed": "uint16",
+            "throttle": "float",
+            "steer": "float",
+            "brake": "float",
+            "clutch": "uint8",
+            "engineRPM": "uint16",
+            "revLightsPercent": "uint8",
+            "revLightsBitValue": "uint16",
+            "brakesTemperature": [
+                "uint16",
+                "uint16",
+                "uint16",
+                "uint16"
+            ],
+            "tyresInnerTemperature": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ],
+            "engineTemperature": "uint16",
+            "tyresPressure": [
+                "float",
+                "float",
+                "float",
+                "float"
+            ],
+            "surfaceType": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ]
+        },
+        {
+            "speed": "uint16",
+            "throttle": "float",
+            "steer": "float",
+            "brake": "float",
+            "clutch": "uint8",
+            "engineRPM": "uint16",
+            "revLightsPercent": "uint8",
+            "revLightsBitValue": "uint16",
+            "brakesTemperature": [
+                "uint16",
+                "uint16",
+                "uint16",
+                "uint16"
+            ],
+            "tyresInnerTemperature": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ],
+            "engineTemperature": "uint16",
+            "tyresPressure": [
+                "float",
+                "float",
+                "float",
+                "float"
+            ],
+            "surfaceType": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ]
+        },
+        {
+            "speed": "uint16",
+            "throttle": "float",
+            "steer": "float",
+            "brake": "float",
+            "clutch": "uint8",
+            "engineRPM": "uint16",
+            "revLightsPercent": "uint8",
+            "revLightsBitValue": "uint16",
+            "brakesTemperature": [
+                "uint16",
+                "uint16",
+                "uint16",
+                "uint16"
+            ],
+            "tyresInnerTemperature": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ],
+            "engineTemperature": "uint16",
+            "tyresPressure": [
+                "float",
+                "float",
+                "float",
+                "float"
+            ],
+            "surfaceType": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ]
+        },
+        {
+            "speed": "uint16",
+            "throttle": "float",
+            "steer": "float",
+            "brake": "float",
+            "clutch": "uint8",
+            "engineRPM": "uint16",
+            "revLightsPercent": "uint8",
+            "revLightsBitValue": "uint16",
+            "brakesTemperature": [
+                "uint16",
+                "uint16",
+                "uint16",
+                "uint16"
+            ],
+            "tyresInnerTemperature": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ],
+            "engineTemperature": "uint16",
+            "tyresPressure": [
+                "float",
+                "float",
+                "float",
+                "float"
+            ],
+            "surfaceType": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ]
+        },
+        {
+            "speed": "uint16",
+            "throttle": "float",
+            "steer": "float",
+            "brake": "float",
+            "clutch": "uint8",
+            "engineRPM": "uint16",
+            "revLightsPercent": "uint8",
+            "revLightsBitValue": "uint16",
+            "brakesTemperature": [
+                "uint16",
+                "uint16",
+                "uint16",
+                "uint16"
+            ],
+            "tyresInnerTemperature": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ],
+            "engineTemperature": "uint16",
+            "tyresPressure": [
+                "float",
+                "float",
+                "float",
+                "float"
+            ],
+            "surfaceType": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ]
+        },
+        {
+            "speed": "uint16",
+            "throttle": "float",
+            "steer": "float",
+            "brake": "float",
+            "clutch": "uint8",
+            "engineRPM": "uint16",
+            "revLightsPercent": "uint8",
+            "revLightsBitValue": "uint16",
+            "brakesTemperature": [
+                "uint16",
+                "uint16",
+                "uint16",
+                "uint16"
+            ],
+            "tyresInnerTemperature": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ],
+            "engineTemperature": "uint16",
+            "tyresPressure": [
+                "float",
+                "float",
+                "float",
+                "float"
+            ],
+            "surfaceType": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ]
+        },
+        {
+            "speed": "uint16",
+            "throttle": "float",
+            "steer": "float",
+            "brake": "float",
+            "clutch": "uint8",
+            "engineRPM": "uint16",
+            "revLightsPercent": "uint8",
+            "revLightsBitValue": "uint16",
+            "brakesTemperature": [
+                "uint16",
+                "uint16",
+                "uint16",
+                "uint16"
+            ],
+            "tyresInnerTemperature": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ],
+            "engineTemperature": "uint16",
+            "tyresPressure": [
+                "float",
+                "float",
+                "float",
+                "float"
+            ],
+            "surfaceType": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ]
+        },
+        {
+            "speed": "uint16",
+            "throttle": "float",
+            "steer": "float",
+            "brake": "float",
+            "clutch": "uint8",
+            "engineRPM": "uint16",
+            "revLightsPercent": "uint8",
+            "revLightsBitValue": "uint16",
+            "brakesTemperature": [
+                "uint16",
+                "uint16",
+                "uint16",
+                "uint16"
+            ],
+            "tyresInnerTemperature": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ],
+            "engineTemperature": "uint16",
+            "tyresPressure": [
+                "float",
+                "float",
+                "float",
+                "float"
+            ],
+            "surfaceType": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ]
+        }
+    ],
+    "mfdPanelIndex": "uint8",
+    "suggestedGear": "int8"
+}
