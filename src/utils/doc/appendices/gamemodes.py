@@ -3,7 +3,7 @@ from utils.doc.appendices.tables import get_table_from_doc, get_table_content, T
 def get(file_path: str):
     id = TABLE_IDX_23["GameModeIDs"]
     table = get_table_from_doc(file_path, id)
-    gamemodes = get_table_content(table, "Mode")
+    gamemodes = get_table_content(table, "Team")
     return gamemodes
 
 
