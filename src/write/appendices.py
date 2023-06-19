@@ -19,16 +19,34 @@ def get(path: str, spec_path: str):
                 appendices[module_name.upper()] = result
     return appendices
 
+def get_header() -> str:
+    path = os.path.join("src", "write", "header.txt")
+    with open(path) as f:
+        content = f.read()
+    return content
 
-def write(path: str, appendices: dict):
+def format_dict(dict) -> str:
+    string = "{\n"
+    tab = "\t"
+    for key, value in dict.items():
+        string += f"{tab}'{key}' : '{value}',\n"
+    tab = tab[:-1]
+    string += "}"
+    return string
+
+
+def write(path: str, appendices: dict, header: str):
     with open(path, 'w') as f:
+        f.write(header + "\n\n")
         for name, value in appendices.items():
-            f.write(f"{name} = {value}\n\n")
+            formatted_value = format_dict(value)
+            f.write(f"{name} = {formatted_value}\n\n")
 
 
 if __name__ == '__main__':
     appendices_path = os.path.join("src", "utils", "doc", "appendices")
-    spec_path = ""
+    spec_path = "C:\\Users\\julia\\Downloads\\Data Output from F1 23 v29x3.docx"
     path_to = os.path.join(".", "data", "appendices.py")
     dicts = get(appendices_path, spec_path)
-    write(path_to, dicts)
+    header = get_header()
+    write(path_to, dicts, header)
