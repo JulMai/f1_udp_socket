@@ -5,7 +5,7 @@ import importlib.util
 def get(path: str, spec_path: str):
     appendices = {}
     for filename in os.listdir(path):
-        if filename.endswith('.py'):
+        if filename.endswith('.py') and not "tables" in filename:
             module_name = filename[:-3]
             module_path = os.path.join(path, filename)
 
@@ -45,7 +45,7 @@ def write(path: str, appendices: dict, header: str):
 
 if __name__ == '__main__':
     appendices_path = os.path.join("src", "utils", "doc", "appendices")
-    spec_path = "C:\\Users\\julia\\Downloads\\Data Output from F1 23 v29x3.docx"
+    spec_path = ".\\Data Output from F1 23 v29x3.docx"
     path_to = os.path.join(".", "data", "appendices.py")
     dicts = get(appendices_path, spec_path)
     header = get_header()
