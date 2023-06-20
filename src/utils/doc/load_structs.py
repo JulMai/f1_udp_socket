@@ -86,7 +86,7 @@ def write_to_json(struct: dict, name: str, path: str = os.path.join(".", "packet
 
 
 if __name__ == '__main__':
-    path = ""
+    path = "./Data Output from F1 23 v29x3.docx"
     text = get_str_from_doc(path)
     structs = structs_to_json_rec(text)
     for name, struct in structs.items():

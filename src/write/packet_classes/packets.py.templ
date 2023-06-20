@@ -1,0 +1,141 @@
+"""
+Code for
+	to_json,
+    PacketMixin,
+    Packet
+is from f1_22_telemetry
+"""
+
+
+"""
+The hard work for this file was taken from here:
+https://forums.codemasters.com/topic/
+80231-f1-2021-udp-specification/?do=findComment&comment=624274
+
+
+Event                | Code   | Description
+Session Started      | "SSTA" | Sent when the session starts
+Session Ended        | "SEND" | Sent when the session ends
+Fastest Lap          | "FTLP" | When a driver achieves the fastest lap
+Retirement           | "RTMT" | When a driver retires
+DRS enabled          | "DRSE" | Race control have enabled DRS
+DRS disabled         | "DRSD" | Race control have disabled DRS
+Team mate in pits    | "TMPT" | Your team mate has entered the pits
+Chequered flag       | "CHQF" | The chequered flag has been waved
+Race Winner          | "RCWN" | The race winner is announced
+Penalty Issued       | "PENA" | A penalty has been issued – details in event
+Speed Trap Triggered | "SPTP" | Speed trap has been triggered by fastest speed
+Start lights         | "STLG" | Start lights – number shown
+Lights out           | "LGOT" | Lights out
+Drive through served | "DTSV" | Drive through penalty served
+Stop go served       | "SGSV" | Stop go penalty served
+
+"""
+
+import ctypes
+import json
+
+import logging
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s.%(msecs)03d %(levelname)s: %(message)s",
+    datefmt="%Y-%m-%d %H:%M:%S",
+)
+
+logger = logging.getLogger(__name__)
+
+
+def to_json(*args, **kwargs):
+    kwargs.setdefault("indent", 2)
+
+    kwargs["sort_keys"] = True
+    kwargs["ensure_ascii"] = False
+    kwargs["separators"] = (",", ": ")
+
+    return json.dumps(*args, **kwargs)
+
+
+class PacketMixin(object):
+    """A base set of helper methods for ctypes based packets"""
+
+    def get_value(self, field):
+        """Returns the field's value and formats the types value"""
+        return self._format_type(getattr(self, field))
+
+    def pack(self):
+        """Packs the current data structure into a compressed binary
+
+        Returns:
+            (bytes):
+                - The packed binary
+
+        """
+        return bytes(self)
+
+    @classmethod
+    def size(cls):
+        return ctypes.sizeof(cls)
+
+    @classmethod
+    def unpack(cls, buffer):
+        """Attempts to unpack the binary structure into a python structure
+
+        Args:
+            buffer (bytes):
+                - The encoded buffer to decode
+
+        """
+        return cls.from_buffer_copy(buffer)
+
+    def to_dict(self):
+        """Returns a ``dict`` with key-values derived from _fields_"""
+        return {k: self.get_value(k) for k, _ in self._fields_}
+
+    def to_json(self):
+        """Returns a ``str`` of sorted JSON derived from _fields_"""
+        return to_json(self.to_dict())
+
+    def _format_type(self, value):
+        """A type helper to format values"""
+        class_name = type(value).__name__
+
+        if class_name == "float":
+            return round(value, 3)
+
+        if class_name == "bytes":
+            return value.decode()
+
+        if isinstance(value, ctypes.Array):
+            return _format_array_type(value)
+
+        if hasattr(value, "to_dict"):
+            return value.to_dict()
+
+        return value
+
+
+def _format_array_type(value):
+    results = []
+
+    for item in value:
+        if isinstance(item, Packet):
+            results.append(item.to_dict())
+        else:
+            results.append(item)
+
+    return results
+
+
+class Packet(ctypes.LittleEndianStructure, PacketMixin):
+    """The base packet class for API version F1 22"""
+
+    _pack_ = 1
+
+    def __repr__(self):
+        return self.to_json()
+    
+"""
+The following code was produced by:
+https://github.com/JulMai/f1_udp_socket_spec/tree/main/src/write/packet_classes/packet_classes.py
+"""
