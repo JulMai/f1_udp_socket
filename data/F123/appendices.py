@@ -1,5 +1,5 @@
 """
-File created by: https://github.com/JulMai/f1_udp_socket
+File created by: https://github.com/JulMai/f1_udp_socket_spec
 """
 
 BUTTONFLAGS = {
@@ -87,7 +87,7 @@ INFRINGEMENT_TYPES = {
 	'46' : 'Unserved drive through penalty',
 	'47' : 'Engine component change',
 	'48' : 'Gearbox change',
-	'49' : 'Parc Fermé change',
+	'49' : 'Parc Fermï¿½ change',
 	'50' : 'League grid penalty',
 	'51' : 'Retry penalty',
 	'52' : 'Illegal time gain',
@@ -318,7 +318,7 @@ TRACKS = {
 	'25' : 'Hanoi',
 	'26' : 'Zandvoort',
 	'27' : 'Imola',
-	'28' : 'Portimão',
+	'28' : 'Portimï¿½o',
 	'29' : 'Jeddah',
 	'30' : 'Miami',
 	'31' : 'Las Vegas',
@@ -348,7 +348,7 @@ DRIVER_IDS = {
 	'2' : 'Daniel Ricciardo',
 	'3' : 'Fernando Alonso',
 	'4' : 'Felipe Massa',
-	'6' : 'Kimi Räikkönen',
+	'6' : 'Kimi Rï¿½ikkï¿½nen',
 	'7' : 'Lewis Hamilton',
 	'9' : 'Max Verstappen',
 	'10' : 'Nico Hulkenburg',
@@ -390,12 +390,12 @@ DRIVER_IDS = {
 	'48' : 'Nyck De Vries',
 	'49' : 'Jack Aitken',
 	'50' : 'George Russell',
-	'51' : 'Maximilian Günther',
+	'51' : 'Maximilian Gï¿½nther',
 	'52' : 'Nirei Fukuzumi',
 	'53' : 'Luca Ghiotto',
 	'54' : 'Lando Norris',
-	'55' : 'Sérgio Sette Câmara',
-	'56' : 'Louis Delétraz',
+	'55' : 'Sï¿½rgio Sette Cï¿½mara',
+	'56' : 'Louis Delï¿½traz',
 	'57' : 'Antonio Fuoco',
 	'58' : 'Charles Leclerc',
 	'59' : 'Pierre Gasly',
@@ -491,9 +491,9 @@ GAME_MODE_IDS = {
 	'15' : 'Online Weekly Event',
 	'17' : 'Story Mode',
 	'19' : 'Career `22',
-	'20' : 'Career ’22 Online',
+	'20' : 'Career ï¿½22 Online',
 	'21' : 'Career `23',
-	'22' : 'Career ’23 Online',
+	'22' : 'Career ï¿½23 Online',
 	'127' : 'Benchmark',
 }
 

@@ -28,7 +28,7 @@ def get_table_content(table, value_key: str):
                 id = int(text)
             elif keys[j] == value_key:
                 value = text.replace(" ", "")
-                value = f"Packet{value}Data"
+                value = get_Packet_Name(value)
             if id != "" and value != "":
                 values[id] = value
                 id = ""
@@ -36,6 +36,15 @@ def get_table_content(table, value_key: str):
 
     values = dict(sorted(values.items(), key=lambda x: x[0]))
     return values
+
+def get_Packet_Name(value: str) -> str:
+    if value == "CarSetups":
+        value = "CarSetup"
+    if not value.startswith("Packet"):
+        value = "Packet" + value
+    if not value.endswith("Data"):
+        value = value + "Data"
+    return value
 
 
 if __name__ == '__main__':

@@ -1,4 +1,6 @@
 """
+File created by: https://github.com/JulMai/f1_udp_socket_spec
+
 Code for
 	to_json,
     PacketMixin,
@@ -588,3 +590,36 @@ class PacketMotionExData(Packet):
 	]
 
 
+HEADER_FIELD_TO_PACKET_TYPE = {
+	(2023, 1, 0) : PacketMotionData,
+	(2023, 1, 1) : PacketSessionData,
+	(2023, 1, 2) : PacketLapData,
+	(2023, 1, 3) : PacketEventData,
+	(2023, 1, 4) : PacketParticipantsData,
+	(2023, 1, 5) : PacketCarSetupData,
+	(2023, 1, 6) : PacketCarTelemetryData,
+	(2023, 1, 7) : PacketCarStatusData,
+	(2023, 1, 8) : PacketFinalClassificationData,
+	(2023, 1, 9) : PacketLobbyInfoData,
+	(2023, 1, 10) : PacketCarDamageData,
+	(2023, 1, 11) : PacketSessionHistoryData,
+	(2023, 1, 12) : PacketTyreSetsData,
+	(2023, 1, 13) : PacketMotionExData,
+}
+
+PACKET_ID_TO_PACKET_TYPE_STR = {
+	0: 'PacketMotionData',
+	1: 'PacketSessionData',
+	2: 'PacketLapData',
+	3: 'PacketEventData',
+	4: 'PacketParticipantsData',
+	5: 'PacketCarSetupData',
+	6: 'PacketCarTelemetryData',
+	7: 'PacketCarStatusData',
+	8: 'PacketFinalClassificationData',
+	9: 'PacketLobbyInfoData',
+	10: 'PacketCarDamageData',
+	11: 'PacketSessionHistoryData',
+	12: 'PacketTyreSetsData',
+	13: 'PacketMotionExData',
+}
