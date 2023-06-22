@@ -16,15 +16,37 @@ def get_struct_name(s: str):
 
 
 def get_attributes(s: str):
-    re_attr = r'\w+\s+m_.{5,25};'
-    attributes = re.findall(re_attr, s)
+    re_read_error = r"\s+\w+m_\w+"
+    matches_read_error = re.findall(re_read_error, s)
+    if matches_read_error:
+        s = s.replace("m_", " m_")
+        (s)
+    re_attr = r"\w+\s+m_\w+(\[\d+\])?;"
+    attributes = []
+
+    matches = re.finditer(re_attr, s, re.MULTILINE)
+
+    for matchNum, match in enumerate(matches, start=1):
+
+        if match.group(0) is not None:
+            attributes.append(match.group(0))
+
     return attributes
 
 
 def get_attr_name(s: str):
     re_attr_name = r'm_\w+(\[\d+])?'
     name = re.search(re_attr_name, s)[0][2:]
-    return name
+    re_list_exception = r"^[^\[]+(?=\[\d+\])"
+    list_exception_matches = re.search(re_list_exception, name)
+    num = 0
+    if list_exception_matches is not None:
+        re_list_len = r"\[(\d+)\]"
+        match = re.search(re_list_len, name)
+        if match:
+            num = int(match.group(1))
+        name = list_exception_matches.group(0)
+    return name, num
 
 
 def get_attr_type(s: str):
@@ -59,7 +81,7 @@ def structs_to_json_rec(text: str):
     for struct in struct_strs:
         struct_name = get_struct_name(struct)
         if "CarDamage" in struct_name:
-            print()
+            ()
         attributes = get_attributes(struct)
         attr = {}
         for attribute in attributes:
@@ -71,7 +93,7 @@ def structs_to_json_rec(text: str):
             if iterator > 0:
                 name = name[:name.find("[")]
                 attr[name] = [type for i in range(iterator)]
-                print()
+                ()
             else:
                 attr[name] = type
         structs[struct_name] = attr

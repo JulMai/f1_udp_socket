@@ -29,6 +29,9 @@ def format_dict(dict) -> str:
     string = "{\n"
     tab = "\t"
     for key, value in dict.items():
+        if type(key) is int:
+            string += f"{tab}{key} : '{value}',\n"
+            continue
         string += f"{tab}'{key}' : '{value}',\n"
     tab = tab[:-1]
     string += "}"

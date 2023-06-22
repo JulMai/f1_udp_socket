@@ -32,16 +32,23 @@ def get_class_str_from_struct_text(text: str) -> str:
 
     attributes = get_attributes(text)
     for attribute in attributes:
-        attr_name = get_attr_name(attribute)
+        attr_name, attr_num = get_attr_name(attribute)
         attr_type = get_attr_type(attribute)
         attr_class = get_type_class(attr_type)
+        if attr_class == "EventDataDetails":
+            continue
+        if attr_num > 0:
+            class_str += f"{tab}(\"{attr_name}\", {attr_class} * {attr_num}),\n"
+            continue
         class_str += f"{tab}(\"{attr_name}\", {attr_class}),\n"
     tab = tab[:-1]
     class_str += f"{tab}]\n"
     return class_str
 
+
 PACKET_FORMAT = 2023
 PACKET_VERSION = 1
+
 
 def get_HEADER_FIELD_TO_PACKET_TYPE_str(spec_path: str):
     ret_str = "HEADER_FIELD_TO_PACKET_TYPE = {\n"
@@ -52,6 +59,7 @@ def get_HEADER_FIELD_TO_PACKET_TYPE_str(spec_path: str):
     ret_str += "}\n"
     return ret_str
 
+
 def get_PACKET_ID_TO_PACKET_TYPE_STR_str(spec_path: str):
     ret_str = "PACKET_ID_TO_PACKET_TYPE_STR = {\n"
     tab = "\t"
@@ -60,7 +68,6 @@ def get_PACKET_ID_TO_PACKET_TYPE_STR_str(spec_path: str):
         ret_str += f"{tab}{idx}: '{name}',\n"
     ret_str += "}\n"
     return ret_str
-
 
 
 if __name__ == '__main__':
@@ -84,6 +91,6 @@ if __name__ == '__main__':
         spec_path)
     with open(path_out, 'a') as f:
         f.write(header_field_to_packet_type_str + "\n")
-    
+
     with open(path_out, 'a') as f:
         f.write(get_PACKET_ID_TO_PACKET_TYPE_STR_str(spec_path))

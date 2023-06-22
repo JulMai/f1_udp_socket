@@ -176,14 +176,16 @@ class CarMotionData(Packet):
 		("gForceLateral", ctypes.c_float),
 		("gForceLongitudinal", ctypes.c_float),
 		("gForceVertical", ctypes.c_float),
+		("yaw", ctypes.c_float),
 		("pitch", ctypes.c_float),
+		("roll", ctypes.c_float),
 	]
 
 
 class PacketMotionData(Packet):
 	_fields_ = [
 		("header", PacketHeader),
-		("carMotionData[22]", CarMotionData),
+		("carMotionData", CarMotionData * 22),
 	]
 
 
@@ -226,10 +228,11 @@ class PacketSessionData(Packet):
 		("spectatorCarIndex", ctypes.c_uint8),
 		("sliProNativeSupport", ctypes.c_uint8),
 		("numMarshalZones", ctypes.c_uint8),
-		("marshalZones[21]", MarshalZone),
+		("marshalZones", MarshalZone * 21),
 		("safetyCarStatus", ctypes.c_uint8),
 		("networkGame", ctypes.c_uint8),
 		("numWeatherForecastSamples", ctypes.c_uint8),
+		("weatherForecastSamples", WeatherForecastSample * 56),
 		("forecastAccuracy", ctypes.c_uint8),
 		("aiDifficulty", ctypes.c_uint8),
 		("seasonLinkIdentifier", ctypes.c_uint32),
@@ -252,8 +255,11 @@ class PacketSessionData(Packet):
 		("timeOfDay", ctypes.c_uint32),
 		("sessionLength", ctypes.c_uint8),
 		("speedUnitsLeadPlayer", ctypes.c_uint8),
+		("temperatureUnitsLeadPlayer", ctypes.c_uint8),
 		("speedUnitsSecondaryPlayer", ctypes.c_uint8),
+		("temperatureUnitsSecondaryPlayer", ctypes.c_uint8),
 		("numSafetyCarPeriods", ctypes.c_uint8),
+		("numVirtualSafetyCarPeriods", ctypes.c_uint8),
 		("numRedFlagPeriods", ctypes.c_uint8),
 	]
 
@@ -280,6 +286,7 @@ class LapData(Packet):
 		("penalties", ctypes.c_uint8),
 		("totalWarnings", ctypes.c_uint8),
 		("cornerCuttingWarnings", ctypes.c_uint8),
+		("numUnservedDriveThroughPens", ctypes.c_uint8),
 		("numUnservedStopGoPens", ctypes.c_uint8),
 		("gridPosition", ctypes.c_uint8),
 		("driverStatus", ctypes.c_uint8),
@@ -294,14 +301,16 @@ class LapData(Packet):
 class PacketLapData(Packet):
 	_fields_ = [
 		("header", PacketHeader),
-		("lapData[22]", LapData),
+		("lapData", LapData * 22),
+		("timeTrialPBCarIdx", ctypes.c_uint8),
+		("timeTrialRivalCarIdx", ctypes.c_uint8),
 	]
 
 
 class PacketEventData(Packet):
 	_fields_ = [
 		("header", PacketHeader),
-		("eventStringCode[4]", ctypes.c_uint8),
+		("eventStringCode", ctypes.c_uint8 * 4),
 	]
 
 
@@ -314,7 +323,7 @@ class ParticipantData(Packet):
 		("myTeam", ctypes.c_uint8),
 		("raceNumber", ctypes.c_uint8),
 		("nationality", ctypes.c_uint8),
-		("name[48]", ctypes.c_char),
+		("name", ctypes.c_char * 48),
 		("yourTelemetry", ctypes.c_uint8),
 		("showOnlineNames", ctypes.c_uint8),
 		("platform", ctypes.c_uint8),
@@ -325,7 +334,7 @@ class PacketParticipantsData(Packet):
 	_fields_ = [
 		("header", PacketHeader),
 		("numActiveCars", ctypes.c_uint8),
-		("participants[22]", ParticipantData),
+		("participants", ParticipantData * 22),
 	]
 
 
@@ -359,7 +368,7 @@ class CarSetupData(Packet):
 class PacketCarSetupData(Packet):
 	_fields_ = [
 		("header", PacketHeader),
-		("carSetups[22]", CarSetupData),
+		("carSetups", CarSetupData * 22),
 	]
 
 
@@ -370,22 +379,26 @@ class CarTelemetryData(Packet):
 		("steer", ctypes.c_float),
 		("brake", ctypes.c_float),
 		("clutch", ctypes.c_uint8),
+		("gear", ctypes.c_int8),
 		("engineRPM", ctypes.c_uint16),
+		("drs", ctypes.c_uint8),
 		("revLightsPercent", ctypes.c_uint8),
 		("revLightsBitValue", ctypes.c_uint16),
-		("brakesTemperature[4]", ctypes.c_uint16),
-		("tyresInnerTemperature[4]", ctypes.c_uint8),
+		("brakesTemperature", ctypes.c_uint16 * 4),
+		("tyresSurfaceTemperature", ctypes.c_uint8 * 4),
+		("tyresInnerTemperature", ctypes.c_uint8 * 4),
 		("engineTemperature", ctypes.c_uint16),
-		("tyresPressure[4]", ctypes.c_float),
-		("surfaceType[4]", ctypes.c_uint8),
+		("tyresPressure", ctypes.c_float * 4),
+		("surfaceType", ctypes.c_uint8 * 4),
 	]
 
 
 class PacketCarTelemetryData(Packet):
 	_fields_ = [
 		("header", PacketHeader),
-		("carTelemetryData[22]", CarTelemetryData),
+		("carTelemetryData", CarTelemetryData * 22),
 		("mfdPanelIndex", ctypes.c_uint8),
+		("mfdPanelIndexSecondaryPlayer", ctypes.c_uint8),
 		("suggestedGear", ctypes.c_int8),
 	]
 
@@ -423,6 +436,7 @@ class CarStatusData(Packet):
 class PacketCarStatusData(Packet):
 	_fields_ = [
 		("header", PacketHeader),
+		("carStatusData", CarStatusData * 22),
 	]
 
 
@@ -439,9 +453,9 @@ class FinalClassificationData(Packet):
 		("penaltiesTime", ctypes.c_uint8),
 		("numPenalties", ctypes.c_uint8),
 		("numTyreStints", ctypes.c_uint8),
-		("tyreStintsActual[8]", ctypes.c_uint8),
-		("tyreStintsVisual[8]", ctypes.c_uint8),
-		("tyreStintsEndLaps[8]", ctypes.c_uint8),
+		("tyreStintsActual", ctypes.c_uint8 * 8),
+		("tyreStintsVisual", ctypes.c_uint8 * 8),
+		("tyreStintsEndLaps", ctypes.c_uint8 * 8),
 	]
 
 
@@ -449,7 +463,7 @@ class PacketFinalClassificationData(Packet):
 	_fields_ = [
 		("header", PacketHeader),
 		("numCars", ctypes.c_uint8),
-		("classificationData[22]", FinalClassificationData),
+		("classificationData", FinalClassificationData * 22),
 	]
 
 
@@ -459,7 +473,7 @@ class LobbyInfoData(Packet):
 		("teamId", ctypes.c_uint8),
 		("nationality", ctypes.c_uint8),
 		("platform", ctypes.c_uint8),
-		("name[48]", ctypes.c_char),
+		("name", ctypes.c_char * 48),
 		("carNumber", ctypes.c_uint8),
 		("readyStatus", ctypes.c_uint8),
 	]
@@ -469,15 +483,15 @@ class PacketLobbyInfoData(Packet):
 	_fields_ = [
 		("header", PacketHeader),
 		("numPlayers", ctypes.c_uint8),
-		("lobbyPlayers[22]", LobbyInfoData),
+		("lobbyPlayers", LobbyInfoData * 22),
 	]
 
 
 class CarDamageData(Packet):
 	_fields_ = [
-		("tyresWear[4]", ctypes.c_float),
-		("tyresDamage[4]", ctypes.c_uint8),
-		("brakesDamage[4]", ctypes.c_uint8),
+		("tyresWear", ctypes.c_float * 4),
+		("tyresDamage", ctypes.c_uint8 * 4),
+		("brakesDamage", ctypes.c_uint8 * 4),
 		("frontLeftWingDamage", ctypes.c_uint8),
 		("frontRightWingDamage", ctypes.c_uint8),
 		("rearWingDamage", ctypes.c_uint8),
@@ -502,7 +516,7 @@ class CarDamageData(Packet):
 class PacketCarDamageData(Packet):
 	_fields_ = [
 		("header", PacketHeader),
-		("carDamageData[22]", CarDamageData),
+		("carDamageData", CarDamageData * 22),
 	]
 
 
@@ -537,8 +551,8 @@ class PacketSessionHistoryData(Packet):
 		("bestSector1LapNum", ctypes.c_uint8),
 		("bestSector2LapNum", ctypes.c_uint8),
 		("bestSector3LapNum", ctypes.c_uint8),
-		("lapHistoryData[100]", LapHistoryData),
-		("tyreStintsHistoryData[8]", TyreStintHistoryData),
+		("lapHistoryData", LapHistoryData * 100),
+		("tyreStintsHistoryData", TyreStintHistoryData * 8),
 	]
 
 
@@ -546,6 +560,7 @@ class TyreSetData(Packet):
 	_fields_ = [
 		("actualTyreCompound", ctypes.c_uint8),
 		("visualTyreCompound", ctypes.c_uint8),
+		("wear", ctypes.c_uint8),
 		("available", ctypes.c_uint8),
 		("recommendedSession", ctypes.c_uint8),
 		("lifeSpan", ctypes.c_uint8),
@@ -559,7 +574,7 @@ class PacketTyreSetsData(Packet):
 	_fields_ = [
 		("header", PacketHeader),
 		("carIdx", ctypes.c_uint8),
-		("tyreSetData[20]", TyreSetData),
+		("tyreSetData", TyreSetData * 20),
 		("fittedIdx", ctypes.c_uint8),
 	]
 
@@ -567,14 +582,14 @@ class PacketTyreSetsData(Packet):
 class PacketMotionExData(Packet):
 	_fields_ = [
 		("header", PacketHeader),
-		("suspensionPosition[4]", ctypes.c_float),
-		("suspensionVelocity[4]", ctypes.c_float),
-		("suspensionAcceleration[4]", ctypes.c_float),
-		("wheelSpeed[4]", ctypes.c_float),
-		("wheelSlipRatio[4]", ctypes.c_float),
-		("wheelSlipAngle[4]", ctypes.c_float),
-		("wheelLatForce[4]", ctypes.c_float),
-		("wheelLongForce[4]", ctypes.c_float),
+		("suspensionPosition", ctypes.c_float * 4),
+		("suspensionVelocity", ctypes.c_float * 4),
+		("suspensionAcceleration", ctypes.c_float * 4),
+		("wheelSpeed", ctypes.c_float * 4),
+		("wheelSlipRatio", ctypes.c_float * 4),
+		("wheelSlipAngle", ctypes.c_float * 4),
+		("wheelLatForce", ctypes.c_float * 4),
+		("wheelLongForce", ctypes.c_float * 4),
 		("heightOfCOGAboveGround", ctypes.c_float),
 		("localVelocityX", ctypes.c_float),
 		("localVelocityY", ctypes.c_float),
@@ -586,7 +601,7 @@ class PacketMotionExData(Packet):
 		("angularAccelerationY", ctypes.c_float),
 		("angularAccelerationZ", ctypes.c_float),
 		("frontWheelsAngle", ctypes.c_float),
-		("wheelVertForce[4]", ctypes.c_float),
+		("wheelVertForce", ctypes.c_float * 4),
 	]
 
 
