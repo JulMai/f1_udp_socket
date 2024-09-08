@@ -46,7 +46,23 @@ def get_attr_name(s: str):
         if match:
             num = int(match.group(1))
         name = list_exception_matches.group(0)
+    name = format_attr_name(name)
     return name, num
+
+def format_attr_name(name: str) -> str:
+    parts = []
+    
+    for i, char in enumerate(name):
+        if char.isupper():
+            if i > 0 and (name[i - 1].islower() or (name[i - 1].isupper() and i > 0 and name[i - 1].islower())):
+                parts.append('_')
+            parts.append(char.lower())
+        else:
+            parts.append(char)
+    
+    formatted_name = ''.join(parts)
+    
+    return formatted_name
 
 
 def get_attr_type(s: str):

@@ -46,7 +46,7 @@ def get_class_str_from_struct_text(text: str) -> str:
     return class_str
 
 
-PACKET_FORMAT = 2023
+PACKET_FORMAT = 2024
 PACKET_VERSION = 1
 
 
@@ -71,7 +71,7 @@ def get_PACKET_ID_TO_PACKET_TYPE_STR_str(spec_path: str):
 
 
 if __name__ == '__main__':
-    spec_path = "./Data Output from F1 23 v29x3.docx"
+    spec_path = "./Data Output from F1 24 v27.2x.docx"
     path_template = os.path.join(os.path.dirname(__file__), "packets.py.templ")
     path_out = "./packets.py"
     with open(path_out, 'w') as f:

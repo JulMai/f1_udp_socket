@@ -48,7 +48,7 @@ def write(path: str, appendices: dict, header: str):
 
 if __name__ == '__main__':
     appendices_path = os.path.join("src", "utils", "doc", "appendices")
-    spec_path = ".\\Data Output from F1 23 v29x3.docx"
+    spec_path = ".\\Data Output from F1 24 v27.2x.docx"
     path_to = os.path.join(".", "data", "appendices.py")
     dicts = get(appendices_path, spec_path)
     header = get_header()
